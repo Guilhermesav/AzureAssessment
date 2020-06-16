@@ -1,0 +1,12 @@
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\bin\Release\netstandard2.0\AzureAT.Infraestrtura.Services.deps.json
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\bin\Release\netstandard2.0\AzureAT.Infraestrtura.Services.dll
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\bin\Release\netstandard2.0\AzureAT.Infraestrtura.Services.pdb
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\bin\Release\netstandard2.0\AzureAT.Dominio.Model.dll
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\bin\Release\netstandard2.0\AzureAT.Dominio.Model.pdb
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\obj\Release\netstandard2.0\AzureAT.Infraestrtura.Services.csprojAssemblyReference.cache
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\obj\Release\netstandard2.0\AzureAT.Infraestrtura.Services.AssemblyInfoInputs.cache
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\obj\Release\netstandard2.0\AzureAT.Infraestrtura.Services.AssemblyInfo.cs
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\obj\Release\netstandard2.0\AzureAT.Infraestrtura.Services.csproj.CoreCompileInputs.cache
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\obj\Release\netstandard2.0\AzureAT.Infraestrtura.Services.csproj.CopyComplete
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\obj\Release\netstandard2.0\AzureAT.Infraestrtura.Services.dll
+C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Infraestrtura.Services\obj\Release\netstandard2.0\AzureAT.Infraestrtura.Services.pdb
