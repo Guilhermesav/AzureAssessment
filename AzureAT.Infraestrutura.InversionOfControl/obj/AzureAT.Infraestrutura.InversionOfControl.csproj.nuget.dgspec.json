@@ -1,0 +1,358 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.InversionOfControl\\AzureAT.Infraestrutura.InversionOfControl.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj",
+        "projectName": "AzureAT.Dominio.Model",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj",
+        "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Azure.Cosmos.Table": {
+              "target": "Package",
+              "version": "[1.0.7, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Service\\AzureAT.Dominio.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Service\\AzureAT.Dominio.Service.csproj",
+        "projectName": "AzureAT.Dominio.Service",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Service\\AzureAT.Dominio.Service.csproj",
+        "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Azure.Storage.Blob": {
+              "target": "Package",
+              "version": "[11.1.7, )"
+            },
+            "Microsoft.WindowsAzure.ConfigurationManager": {
+              "target": "Package",
+              "version": "[3.2.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrtura.Services\\AzureAT.Infraestrtura.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrtura.Services\\AzureAT.Infraestrtura.Services.csproj",
+        "projectName": "AzureAT.Infraestrtura.Services",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrtura.Services\\AzureAT.Infraestrtura.Services.csproj",
+        "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrtura.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.4.4, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.3.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.Data\\AzureAT.Infraestrutura.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.Data\\AzureAT.Infraestrutura.Data.csproj",
+        "projectName": "AzureAT.Infraestrutura.Data",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.Data\\AzureAT.Infraestrutura.Data.csproj",
+        "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.InversionOfControl\\AzureAT.Infraestrutura.InversionOfControl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.InversionOfControl\\AzureAT.Infraestrutura.InversionOfControl.csproj",
+        "projectName": "AzureAT.Infraestrutura.InversionOfControl",
+        "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.InversionOfControl\\AzureAT.Infraestrutura.InversionOfControl.csproj",
+        "packagesPath": "C:\\Users\\PICHAU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.InversionOfControl\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PICHAU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Model\\AzureAT.Dominio.Model.csproj"
+              },
+              "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Service\\AzureAT.Dominio.Service.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Dominio.Service\\AzureAT.Dominio.Service.csproj"
+              },
+              "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrtura.Services\\AzureAT.Infraestrtura.Services.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrtura.Services\\AzureAT.Infraestrtura.Services.csproj"
+              },
+              "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.Data\\AzureAT.Infraestrutura.Data.csproj": {
+                "projectPath": "C:\\Users\\PICHAU\\Desktop\\FAculdade\\AssessmentAzure\\AzureAssessment\\AzureAT.Infraestrutura.Data\\AzureAT.Infraestrutura.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

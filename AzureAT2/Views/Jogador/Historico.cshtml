@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AzureAT.Dominio.Model.Entity.JogadorHistoricoEntity>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Historico</h1>
+
+<form asp-action="Historico">
+    <label class="control-label">Pesquisa</label>
+    <input name="pesquisa" class="form-control" />
+    <input type="submit" value="Consultar" class="btn btn-primary" />
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FreeAgent)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Time)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FreeAgent)
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>
