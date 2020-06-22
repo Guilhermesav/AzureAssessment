@@ -35,13 +35,13 @@ namespace AzureAT2.Controllers
         }
 
 
-        // GET: Amigo
+   
         public async Task<IActionResult> Index()
         {
             return View(await _domainService.GetAllAsync());
         }
 
-        // GET: Amigo/Details/5
+     
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -49,25 +49,22 @@ namespace AzureAT2.Controllers
                 return NotFound();
             }
 
-            var amigoEntity = await _domainService.GetByIdAsync(id.Value);
+            var jogadorEntity = await _domainService.GetByIdAsync(id.Value);
 
-            if (amigoEntity == null)
+            if (jogadorEntity == null)
             {
                 return NotFound();
             }
 
-            return View(amigoEntity);
+            return View(jogadorEntity);
         }
 
-        // GET: Amigo/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Amigo/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(JogadorEntity jogadorEntity)
@@ -84,7 +81,7 @@ namespace AzureAT2.Controllers
             return View(jogadorEntity);
         }
 
-        // GET: Amigo/Edit/5
+       
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -92,33 +89,31 @@ namespace AzureAT2.Controllers
                 return NotFound();
             }
 
-            var amigoEntity = await _domainService.GetByIdAsync(id.Value);
-            if (amigoEntity == null)
+            var jogadorEntity = await _domainService.GetByIdAsync(id.Value);
+            string imagemAntiga = jogadorEntity.ImageUri;
+
+            if (jogadorEntity == null)
             {
                 return NotFound();
             }
-            return View(amigoEntity);
+            return View(jogadorEntity);
         }
 
-        // POST: Amigo/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, JogadorEntity jogadorEntity)
+        public async Task<IActionResult> Edit(int id, JogadorEntity jogadorEntity,string imagemAntiga)
         {
             if (id != jogadorEntity.Id)
             {
                 return NotFound();
             }
-
+                
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var file = Request.Form.Files.SingleOrDefault();
-
-                    await _domainService.UpdateAsync(jogadorEntity, file?.OpenReadStream());
+                    await _domainService.UpdateAsync(jogadorEntity,imagemAntiga);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -144,13 +139,13 @@ namespace AzureAT2.Controllers
                 return NotFound();
             }
 
-            var amigoEntity = await _domainService.GetByIdAsync(id.Value);
-            if (amigoEntity == null)
+            var jogadorEntity = await _domainService.GetByIdAsync(id.Value);
+            if (jogadorEntity == null)
             {
                 return NotFound();
             }
 
-            return View(amigoEntity);
+            return View(jogadorEntity);
         }
 
         // POST: Amigo/Delete/5
@@ -158,8 +153,8 @@ namespace AzureAT2.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var amigoEntity = await _domainService.GetByIdAsync(id);
-            await _domainService.DeleteAsync(amigoEntity);
+            var jogadorEntity = await _domainService.GetByIdAsync(id);
+            await _domainService.DeleteAsync(jogadorEntity);
 
             return RedirectToAction(nameof(Index));
         }

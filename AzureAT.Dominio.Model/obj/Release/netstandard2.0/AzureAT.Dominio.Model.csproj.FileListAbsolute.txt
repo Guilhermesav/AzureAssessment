@@ -1,9 +1,0 @@
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\bin\Release\netstandard2.0\AzureAT.Dominio.Model.deps.json
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\bin\Release\netstandard2.0\AzureAT.Dominio.Model.dll
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\bin\Release\netstandard2.0\AzureAT.Dominio.Model.pdb
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\obj\Release\netstandard2.0\AzureAT.Dominio.Model.csprojAssemblyReference.cache
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\obj\Release\netstandard2.0\AzureAT.Dominio.Model.AssemblyInfoInputs.cache
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\obj\Release\netstandard2.0\AzureAT.Dominio.Model.AssemblyInfo.cs
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\obj\Release\netstandard2.0\AzureAT.Dominio.Model.csproj.CoreCompileInputs.cache
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\obj\Release\netstandard2.0\AzureAT.Dominio.Model.dll
-C:\Users\PICHAU\Desktop\FAculdade\AssessmentAzure\AzureAssessment\AzureAT.Dominio.Model\obj\Release\netstandard2.0\AzureAT.Dominio.Model.pdb

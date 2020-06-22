@@ -30,6 +30,27 @@ namespace AzureAT.Infraestrutura.Data.Repositorios
             return await Task.Run(() => linqQuery.ToList());
         }
 
+        public async Task<IEnumerable<JogadorHistoricoEntity>> GetByNameAsync(string name)
+        {
+            CloudTableClient tableClient = _cloudStorageAccount.CreateCloudTableClient(new TableClientConfiguration());
+
+            CloudTable table = tableClient.GetTableReference(_table);
+
+            var linqQuery = table.CreateQuery<JogadorHistoricoEntity>().Where(x => x.Nome == name
+                                                               );
+            return await Task.Run(() => linqQuery.ToList());
+        }
+        public async Task<IEnumerable<JogadorHistoricoEntity>> GetByTimeAsync(string time)
+        {
+            CloudTableClient tableClient = _cloudStorageAccount.CreateCloudTableClient(new TableClientConfiguration());
+
+            CloudTable table = tableClient.GetTableReference(_table);
+
+            var linqQuery = table.CreateQuery<JogadorHistoricoEntity>().Where(x => x.Time == time
+                                                               );
+            return await Task.Run(() => linqQuery.ToList());
+        }
+
         public async Task InsertAsync(JogadorHistoricoEntity jogadorHistoricoEntity)
         {
             CloudTableClient tableClient = _cloudStorageAccount.CreateCloudTableClient(new TableClientConfiguration());
@@ -42,6 +63,7 @@ namespace AzureAT.Infraestrutura.Data.Repositorios
 
             _ = await table.ExecuteAsync(insertOperation);
         }
+
     }
 }
 

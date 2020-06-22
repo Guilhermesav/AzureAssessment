@@ -12,7 +12,7 @@ namespace AzureAT.Dominio.Model.Interface.Servicos
         Task<IEnumerable<JogadorEntity>> GetAllAsync();
         Task<JogadorEntity> GetByIdAsync(int id);
         Task InsertAsync(JogadorEntity jogadorEntity);
-        Task UpdateAsync(JogadorEntity jogadorEntity,Stream stream);
+        Task UpdateAsync(JogadorEntity jogadorEntity,string novaImagem);
         Task DeleteAsync(JogadorEntity jogadorEntity);
 
         Task<IEnumerable<JogadorHistoricoEntity>> GetHistoricoAsync(string id);

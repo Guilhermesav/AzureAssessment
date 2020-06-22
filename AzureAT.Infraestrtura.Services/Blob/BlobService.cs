@@ -11,7 +11,7 @@ namespace AzureAT.Infraestrtura.Services.Blob
     public class BlobService : IBlobService
     {
         private readonly BlobServiceClient _blobServiceClient;
-        private const string _container = "imagem";
+        private const string _container = "imagens";
 
         public BlobService(string storageAccount)
         {
@@ -33,6 +33,7 @@ namespace AzureAT.Infraestrtura.Services.Blob
             await blobClient.UploadAsync(stream, true);
 
             return blobClient.Uri.ToString();
+
         }
 
         public async Task DeleteAsync(string BlobName)

@@ -2,6 +2,7 @@
 using AzureAT.Dominio.Model.Interface.Infraestrutura;
 using AzureAT.Dominio.Model.Interface.Repositorios;
 using AzureAT.Dominio.Model.Interface.Servicos;
+using Microsoft.Azure.Documents.SystemFunctions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,9 @@ namespace AzureAT.Dominio.Service.Services
             _historicoRepository = historicoRepository;
         }
 
-        public async Task<IEnumerable<JogadorHistoricoEntity>> GetHistoricoAsync(string id)
+        public async Task<IEnumerable<JogadorHistoricoEntity>> GetHistoricoAsync(string parametro)
         {
-            return await _historicoRepository.GetByPartitionKeyAsync(id);
+            return await _historicoRepository.GetByPartitionKeyAsync(parametro);
         }
 
         public async Task<IEnumerable<JogadorEntity>> GetAllAsync()
@@ -60,14 +61,25 @@ namespace AzureAT.Dominio.Service.Services
             await _historicoRepository.InsertAsync(new JogadorHistoricoEntity(jogadorEntity));
         }
 
-        public async Task UpdateAsync(JogadorEntity jogadorEntity,Stream stream)
+        public async Task UpdateAsync(JogadorEntity jogadorEntity,string novaImagem)
         {
-            if (stream != null)
+
+
+            if (jogadorEntity.ImageUri != null)
             {
                 await _blobService.DeleteAsync(jogadorEntity.ImageUri);
 
-                var newUri = await _blobService.UploadAsync(stream);
-                jogadorEntity.ImageUri = newUri;
+                var message = new
+                {
+                    ImageURI = novaImagem,
+                    Id = $"{jogadorEntity.Id}",
+                };
+
+                var jsonMessage = JsonConvert.SerializeObject(message);
+                var bytesJsonMessage = UTF8Encoding.UTF8.GetBytes(jsonMessage);
+                string jsonMessageBase64 = Convert.ToBase64String(bytesJsonMessage);
+
+                await _queueService.SendAsync(jsonMessageBase64);
             }
             await _repository.UpdateAsync(jogadorEntity);
 
@@ -76,6 +88,8 @@ namespace AzureAT.Dominio.Service.Services
 
         public async Task DeleteAsync(JogadorEntity jogadorEntity)
         {
+            await _blobService.DeleteAsync(jogadorEntity.ImageUri);
+
             await _repository.DeleteAsync(jogadorEntity);
         }
 

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "storage1": {
+      "restored": true,
+      "restoreTime": "2020-06-22T20:05:51.3557727Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "assessment"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "daf18a26-e009-458c-93b3-e9e5e37f8bc2"
+    }
+  }
+}
